@@ -1,4 +1,4 @@
-# alura
+# Alura
 
 Todos os projetos que fiz em cursos da [Alura](https://www.alura.com.br/)
 
@@ -8,6 +8,6 @@ Todos os projetos que fiz em cursos da [Alura](https://www.alura.com.br/)
 
 - [Flexbox](flexbox)
 - [HTML & CSS](html-css)
-- [JS Avançado](js-avancado)
-- [JS jQuery](js-jquery)
+- [JS Avançado](js-avancado/client)
+- [JS jQuery](js-jquery/public)
 - [Laravel](laravel)
