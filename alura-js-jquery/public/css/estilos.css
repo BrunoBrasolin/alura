@@ -1,0 +1,82 @@
+body {
+  overflow: scroll;
+}
+
+.campo-digitacao {
+  font-size: 20px;
+  height: 130px;
+  border: 3px solid black;
+}
+
+.frase {
+  text-align: left;
+  font-size: 20px;
+}
+
+.campo-desabilitado {
+  background-color: lightgrey;
+}
+
+.icones {
+  vertical-align: middle;
+}
+
+.digitado-certo {
+  border: 3px solid green;
+}
+
+.digitado-errado {
+  border: 3px solid red;
+}
+.placar {
+  display: none;
+}
+
+#frase-id {
+  width: 40px;
+}
+
+#botao-synch{
+    float: right;
+}
+
+#loading {
+  display: none;
+  margin: 0 auto;
+  height: 6em;
+}
+
+.erro-server,
+.erro-id {
+  display: none;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.erro h1 {
+  font-size: 2.5em;
+  font-weight: 900;
+}
+
+.erro p {
+  font-size: 1.5em;
+}
+
+#erro-gif {
+    display: none;
+  margin: 2em auto;
+  height: 10em;
+}
+
+.select-usuarios{
+  display: inline-block;
+}
+
+#usuarios{
+  display: block;
+}
+
+.selectize-input{
+  width: 150px;
+  vertical-align: middle;
+}

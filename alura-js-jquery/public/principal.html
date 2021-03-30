@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/libs/selectize.css">
+    <link rel="stylesheet" type="text/css" href="tooltipster/dist/css/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" href="css/libs/tooltipster-sideTip-punk.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Alura Typer</title>
+</head>
+
+<body>
+    <!-- Seja bem vindo ao curso de jQuery :) -->
+    <div class="container">
+        <h1 class="center">Alura Typer</h1>
+        <p class="frase center"> </p>
+        <img id="loading" src="img/loading.gif" style="display: none;" alt="Loading Gif">
+        <div class="erro">
+            <h2 class="erro-server">Erro ao carregar frase nova :(</h2>
+            <h2 class="erro-id">Erro ao pegar frase com este ID :(</h2>
+            <img src="img/sad.gif" alt="Sad Gif" id="erro-gif">
+            <p class="erro-server">Recarregue a página para tentar novamente</p>
+            <p class="erro-id">Tente outro ID</p>
+        </div>
+        <ul class="informacoes center">
+            <li>
+                <i class="small material-icons icones">description</i>
+                <span id="tamanho-frase" class="icones">0</span> frases
+            </li>
+            <li>
+                <i class="small material-icons icones">query_builder</i>
+                <span id="contador-tempo">0</span> segundos
+            </li>
+        </ul>
+
+        <textarea class="campo-digitacao" cols="30" rows="10"></textarea>
+
+        <div class="botoes">
+            <a id="botao-reiniciar" class="btn-floating btn-large waves-effect waves-light red">
+                <i class="material-icons">restore</i>
+            </a>
+            <a id="botao-placar" class="btn-floating btn-large waves-effect waves-light green">
+                <i class="material-icons">assignment</i>
+            </a>
+            <a id="botao-frase" class="btn-floating btn-large waves-effect waves-light blue">
+                <i class="material-icons">shuffle</i>
+            </a>
+            <a id="botao-frase-id" class="btn-floating btn-large waves-effect waves-light cyan">
+                <i class="material-icons">repeat_one</i>
+            </a>
+            <input type="number" name="fraseId" min="0" id="frase-id">
+            <a id="botao-synch" class="btn-floating btn-large waves-effect waves-light yellow tooltip">
+                <i class="material-icons">swap_vert</i>
+            </a>
+            <div class="select-usuarios">
+                <select id="usuarios">
+                    <option value="Douglas">Douglas</option>
+                    <option value="Flavio">Flavio</option>
+                    <option value="Nico">Nico</option>
+                </select>
+            </div>
+        </div>
+
+        <ul class="pontuacao center">
+            <li> <span id="contador-caracteres">0</span> Caracteres</li>
+            <li><span id="contador-palavras">0</span> palavras</li>
+        </ul>
+
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table class="centered bordered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Nº de Palavras</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody> </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/tooltipster.bundle.min.js"></script>
+    <script src="js/selectize.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/placar.js"></script>
+    <script src="js/frase.js"></script>
+    </ul>
+</body>
+
+</html>
